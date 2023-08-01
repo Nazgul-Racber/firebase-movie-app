@@ -4,11 +4,11 @@ import Main from "../pages/Main";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 import MovieDetail from "../pages/MovieDetail";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 const AppRouter = () => {
   return (
-    <BrowserRouter>
+    <>
       <Navbar />
       <Routes>
         <Route path="/" element={<Main />} />
@@ -16,7 +16,7 @@ const AppRouter = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/details/:id" element={<MovieDetail />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 };
 
