@@ -7,11 +7,12 @@ const Register = () => {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const { createUser } = useContext(AuthContext);
+  const { createUser, signUpProvider } = useContext(AuthContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    createUser(email, password);
+    const displayName = `${name} ${lastName}`;
+    createUser(email, password, displayName);
   };
   return (
     <div className="overflow-hidden flex-1 h-screen justify-center items-center bg-[#23242a]">
@@ -75,6 +76,7 @@ const Register = () => {
           <button
             type="button"
             className="btn-danger flex justify-between items-center"
+            onClick={() => signUpProvider()}
           >
             Continue with Google
             <GoogleIcon color="currentColor" />
