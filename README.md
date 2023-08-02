@@ -1,5 +1,4 @@
-
-009 - Movie App (folder)
+Movie App (folder)
 |
 |----readme.md
 SOLUTION
@@ -27,4 +26,3 @@ SOLUTION
 ├── package.json
 ├── .env
 └── yarn.lock
-
