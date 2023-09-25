@@ -14,7 +14,7 @@ Project aims to create a Movie App.
 ```
 009 - Movie App (folder)
 |
-|----readme.md         # Given to the students (Definition of the project)
+|----readme.md        
 SOLUTION
 ├── public
 │     └── index.html
